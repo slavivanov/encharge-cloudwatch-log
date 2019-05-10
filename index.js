@@ -16,4 +16,5 @@ if (process.env.NODE_ENV === "production") {
 const debug = require("debug");
 debug.log = console.log.bind(console);
 
+export { debug };
 export default debug;
