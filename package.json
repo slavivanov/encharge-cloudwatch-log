@@ -2,7 +2,7 @@
   "name": "encharge-aws-log",
   "version": "1.0.0",
   "description": "Utility that exposes a debug-derived utility that plays nice with Cloudwatch",
-  "main": "index.js",
+  "main": "built.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

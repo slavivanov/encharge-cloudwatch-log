@@ -1,4 +1,4 @@
-const util = require("util");
+import * as util from "util";
 
 if (process.env.NODE_ENV === "production") {
   const originalConsole = console.log.bind(console);
@@ -16,8 +16,5 @@ if (process.env.NODE_ENV === "production") {
 const debug = require("debug");
 debug.log = console.log.bind(console);
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.debug = debug;
-exports.default = debug;
+export { debug };
+export default debug;
