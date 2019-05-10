@@ -1,0 +1,26 @@
+{
+  "name": "encharge-aws-log",
+  "version": "1.0.0",
+  "description": "Utility that exposes a debug-derived utility that plays nice with Cloudwatch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slavivanov/encharge-cloudwatch-log.git"
+  },
+  "keywords": [
+    "cloudwatch",
+    "debug"
+  ],
+  "author": "Slav Ivanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slavivanov/encharge-cloudwatch-log/issues"
+  },
+  "homepage": "https://github.com/slavivanov/encharge-cloudwatch-log#readme",
+  "dependencies": {
+    "debug": "^4.1.1"
+  }
+}
