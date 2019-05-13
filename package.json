@@ -4,6 +4,7 @@
   "description": "Utility that exposes a debug-derived utility that plays nice with Cloudwatch",
   "main": "built.js",
   "scripts": {
+    "build": "babel index.js --presets=@babel/env -o built.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,10 @@
   "homepage": "https://github.com/slavivanov/encharge-cloudwatch-log#readme",
   "dependencies": {
     "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4"
   }
 }

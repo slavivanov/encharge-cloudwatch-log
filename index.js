@@ -7,7 +7,12 @@ if (process.env.NODE_ENV === "production") {
     for (const arg of arguments) {
       const argFormatted = util.isString(arg)
         ? arg
-        : util.inspect(arg, { depth: Number(process.env.LOG_DEPTH) || 5 });
+        : util.inspect(arg, {
+            depth:
+              Number(process.env.LOG_DEPTH) ||
+              Number(process.env.DEBUG_DEPTH) ||
+              5
+          });
       newArgs.push(argFormatted.replace(/(?:\r\n|\r|\n)/g, "\r"));
     }
     originalConsole(newArgs.join("\r"));
