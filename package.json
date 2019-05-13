@@ -1,5 +1,5 @@
 {
-  "name": "encharge-aws-log",
+  "name": "encharge-cloudwatch-log",
   "version": "1.0.0",
   "description": "Utility that exposes a debug-derived utility that plays nice with Cloudwatch",
   "main": "built.js",
